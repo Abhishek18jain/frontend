@@ -17,7 +17,7 @@ const TextCheck = () => {
 
     // Keep original logic
     try {
-      const res = await axios.post("http://localhost:5000/api/text/verify", { text });
+      const res = await axios.post("https://backend-production-4e61.up.railway.app/api/text/verify", { text });
 
       saveHistory({
         type: "text",
