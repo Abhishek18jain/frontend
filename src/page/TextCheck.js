@@ -18,6 +18,7 @@ const TextCheck = () => {
     // Keep original logic
     try {
       const res = await axios.post("https://backend-production-4e61.up.railway.app/api/text/verify", { text });
+      console.log(res)
 
       saveHistory({
         type: "text",
